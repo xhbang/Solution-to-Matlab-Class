@@ -1,0 +1,8 @@
+for i=1:8
+    q(i)=0;
+    s=0;
+    for j=1:22
+        s=s+(data(j,i)-r(i))^2;
+    end
+    q(i)=s/22
+end

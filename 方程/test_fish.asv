@@ -1,0 +1,7 @@
+hold on
+    for k=1:8
+       ts=1:100;x0=[4000,10*k];
+       [t,x]=ode45('fish',ts,x0);
+       plot(x(:,1),x(:,2),'r')
+    end
+xlabel('x');	ylabel('y'); title('ÊýÖµ½â') 

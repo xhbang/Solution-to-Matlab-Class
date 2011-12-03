@@ -1,0 +1,17 @@
+clear
+%1
+subplot(2,1,1);
+x=-2:0.02:2;
+y=x;
+z=sin(pi*sqrt(x.*x+y.*y));
+plot3(x,y,z);
+%2
+u=0:0.1:2*pi;
+v=u;
+[U,V]=meshgrid(u,v);
+%◊¢“‚’‚¿Ô.≥À
+X=(1+cos(U)).*cos(V);
+Y=(1+cos(U)).*sin(V);
+Z=sin(U);
+subplot(2,1,2);
+mesh(X,Y,Z);

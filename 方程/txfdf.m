@@ -1,0 +1,6 @@
+x=-2:0.01:2;
+%here to change
+y=x.^5+2.*x.^2+4;
+plot(x,y),hold on,
+line([-2,2],[0,0])
+%ezplot('f(x)',[-2,2])

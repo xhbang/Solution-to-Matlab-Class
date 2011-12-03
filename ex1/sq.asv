@@ -1,0 +1,11 @@
+%sq.m
+a=input('the num');
+x1=a;
+i=2;
+dis=a
+while(dis>=10e-5)
+   x(i+1)=(x(i)+a/x(i))/2;
+   dis=x(i+1)-x(i);
+   i=i+1
+end
+x(i+1)

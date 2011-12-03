@@ -1,0 +1,11 @@
+x=1:10;
+t=[1:0.1:10];
+k0=[6 0.5];
+y=[2615 1943 1494 1087 765 538 484 290 226 204];
+a1=polyfit(x,y,2);
+y1=polyval(a1,xi);
+[a2,resnorm,residual,flag,output]=lsqcurvefit('fun3',k0,t,y);
+y2=fun2(a2,xi);
+[a3,resnorm3,residual3,flag3,output3]=lsqcurvefit('fun3',k0,t,y);
+y3=fun3(a3,xi);
+plot(x,y,'k+',xi,y1,'y',xi,y2,'r-',xi,y3,'r');

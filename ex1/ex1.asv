@@ -1,0 +1,14 @@
+%ex1
+E=ones(3);
+R=rand(3,2);
+O=zeros(2,3);
+S=diag([2,2]);
+A=[E,R;O,S];
+X=[E,R+R*S;O,S^2];
+B=A^2;
+
+if B==X
+    disp('equal')
+else
+    disp('not equal')
+end

@@ -1,0 +1,3 @@
+function xprim=xprim1(t,x)
+xprim=[x(1)-0.1*x(1)*x(2)+0.01*t;...
+    -x(2)+0.02*x(1)*x(2)+0.04*t];
